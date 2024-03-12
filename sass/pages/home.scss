@@ -1,0 +1,384 @@
+@import "../main.scss";
+
+// home start
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+  &__logo {
+    display: flex;
+    align-items: center;
+    h2 {
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 18.2px;
+      letter-spacing: 0.48px;
+      text-align: left;
+    }
+  }
+  &__search {
+    border: 1px solid rgb(100, 180, 150);
+    border-radius: 5px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    input {
+      padding: 12px 0 12px 16px;
+      border: none;
+      background: $white-color;
+      border-right: 1px solid rgb(100, 180, 150);
+      width: 420px;
+    }
+    select {
+      padding: 12px 0 12px 16px;
+      border: none;
+      color: rgb(33, 37, 41);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 19.5px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    img {
+      border-radius: 0px 5px 5px 0px;
+      background: rgb(245, 62, 50);
+      padding: 16.5px;
+      margin-left: 8px;
+    }
+  }
+  &__product {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+}
+
+// home end
+
+// hero start
+
+#hero {
+  background: rgb(230, 230, 230);
+  position: relative;
+  margin-bottom: 60px;
+  .after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .befor {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  .before {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+  }
+  .karam {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.hero {
+  padding: 250px 0;
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(33, 37, 41);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    text-align: left;
+    position: relative;
+    .perecant {
+      color: rgb(245, 62, 50);
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.48px;
+      text-align: left;
+    }
+    .perecant::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 25px;
+      height: 0.5px;
+      width: 50px;
+      background-color: rgb(245, 62, 50);
+      height: 2px;
+      width: 50px;
+      border-bottom: 1px solid;
+    }
+  }
+  &__title {
+    max-width: 522.06px;
+    color: $dark-color;
+    font-family: Arial;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 68px;
+    letter-spacing: 0.48px;
+    text-align: left;
+    padding: 15px 0 25px 0;
+  }
+  &__list {
+    max-width: 488px;
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26.25px;
+    letter-spacing: 0.48px;
+    text-align: left;
+  }
+  &__input {
+    margin-top: 40px;
+    padding: 0 0 0 60px;
+    border-radius: 50px;
+    border: 1px solid $white-color;
+    background-color: $white-color;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    img {
+      position: absolute;
+      left: 25px;
+    }
+    input {
+      border: none;
+    }
+    input::placeholder {
+      color: rgb(131, 131, 131);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    button {
+      padding: 22px 40px;
+      border-radius: 50px;
+      background: rgb(59, 183, 126);
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+  }
+}
+
+// hero end
+
+// products start
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+  .product-1 {
+    background-image: url(../../images/product-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    p {
+      color: rgb(37, 61, 78);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      letter-spacing: 0%;
+      text-align: left;
+      padding-bottom: 30px;
+      //   max-width: 203px;
+      padding: 70px 15px 30px 50px;
+    }
+    button {
+      color: $white-color;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15.6px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      border-radius: 4px;
+      padding: 8px 13px;
+      background: rgb(245, 62, 50);
+      margin: 0 0 70px 50px;
+    }
+  }
+  .product-2 {
+    background-image: url(../../images/product-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    p {
+      color: rgb(37, 61, 78);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      letter-spacing: 0%;
+      text-align: left;
+      padding-bottom: 30px;
+      //   max-width: 203px;
+      padding: 70px 15px 30px 50px;
+    }
+    button {
+      color: $white-color;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15.6px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      border-radius: 4px;
+      padding: 8px 13px;
+      background: rgb(245, 62, 50);
+      margin: 0 0 70px 50px;
+    }
+  }
+  .product-3 {
+    background-image: url(../../images/product-3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    p {
+      color: rgb(37, 61, 78);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      letter-spacing: 0%;
+      text-align: left;
+      padding-bottom: 30px;
+      //   max-width: 203px;
+      padding: 70px 15px 30px 50px;
+    }
+    button {
+      color: $white-color;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 15.6px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      border-radius: 4px;
+      padding: 8px 13px;
+      background: rgb(245, 62, 50);
+      margin: 0 0 70px 50px;
+    }
+  }
+}
+
+//products end
+
+// row start
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 25px;
+  .card {
+    padding: 21px;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    &__img {
+      max-width: 246px;
+      height: 246px;
+    }
+    &__text {
+      color: rgb(173, 173, 173);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    &__description {
+      max-width: 268px;
+      color: rgb(43, 43, 45);
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.48px;
+      text-align: left;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    .rating {
+      display: flex;
+      align-items: center;
+      p {
+        color: rgb(182, 182, 182);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+    &__list {
+      color: rgb(182, 182, 182);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: left;
+      span {
+        color: #3bb77e;
+        font-size: 16px;
+      }
+    }
+    &__price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        color: rgb(59, 183, 126);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+      p {
+        color: rgb(173, 173, 173);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: line-through;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 20px;
+        border-radius: 4px;
+        background: rgb(245, 62, 50);
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// row end
