@@ -11,7 +11,7 @@ async function fetchData(api) {
 fetchData(API__URL);
 
 function createCard(data) {
-  data.forEach(({ rating, price, description, image, category }) => {
+  data.forEach(({ rating, price, description, image, category , id }) => {
     let card = document.createElement("div");
     card.className = "row";
     card.innerHTML = `
@@ -35,7 +35,11 @@ function createCard(data) {
         </div>
     </div>
     `;
-
+    card.addEventListener("click" , ()=> singlePage(id))
     row.appendChild(card);
   });
+}
+
+function singlePage(id) {
+  window.open(`/pages/product.html?id=${id}` , "_self")
 }
