@@ -110,6 +110,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 70px;
+  margin-bottom: 20px;
 }
 .home__logo {
   display: -webkit-box;
@@ -184,6 +185,7 @@ body {
   background: rgb(230, 230, 230);
   position: relative;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 #hero .after {
   position: absolute;
@@ -202,12 +204,12 @@ body {
 }
 #hero .karam {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -100px;
+  bottom: -30px;
 }
 
 .hero {
-  padding: 250px 0;
+  padding: 250px 0 200px 0;
 }
 .hero__text {
   display: -webkit-box;
